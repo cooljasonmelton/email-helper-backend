@@ -1,0 +1,2 @@
+class ContactTagsController < ApplicationController
+end
