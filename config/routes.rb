@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  
-  get '/profile', to: 'users#profile'
+
+  post '/login', to: 'auth#create'
+
 
   resources :contact_tags
   resources :tags
