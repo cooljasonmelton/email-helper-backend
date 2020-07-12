@@ -3,13 +3,17 @@ class UsersController < ApplicationController
         render json: User.all, include: [:templates, :contacts]
     end 
 
-    def show
-        user = User.find_by(params[:email])
+    def profile 
+        user = User.find_by(email: params[:email], password_digest: params[:password])
         if user
             render json: user, include: [:templates, :contacts]
         else
             render json: { error: 'Invalid credentials.'}, status: 401
         end
+    end 
+
+    def show
+
     end 
 
 

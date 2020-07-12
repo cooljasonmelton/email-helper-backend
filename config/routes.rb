@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  get '/profile', to: 'users#profile'
+
   resources :contact_tags
   resources :tags
   resources :contacts
