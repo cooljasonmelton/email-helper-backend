@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  post '/login', to: 'auth#create'
+
+
   resources :contact_tags
   resources :tags
   resources :contacts
