@@ -13,8 +13,16 @@ class TemplatesController < ApplicationController
         render json: user, include: [:templates, :contacts]
     end
 
+    def destroy
+        template = Template.find_by(id: params[:id])
+        user = User.find_by(id: template.user_id)
+        template.destroy
+        render json: user, include: [:templates, :contacts]
+    end
+
+    private
     def template_params
         params.require(:template).permit(:name, :subject, :body)
-     end
+    end
 
 end
