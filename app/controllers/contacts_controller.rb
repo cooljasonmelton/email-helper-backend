@@ -6,6 +6,13 @@ class ContactsController < ApplicationController
         render json: user, include: [:templates, :contacts]
     end 
 
+    def update
+        contact = Contact.find_by(id: params[:id])
+        user = User.find_by(id: contact.user_id)
+        contact.update(name: params[:name], email: params[:email])
+        render json: user, include: [:templates, :contacts]
+    end 
+
     def destroy
         contact = Contact.find_by(id: params[:id])
         user = User.find_by(id: contact.user_id)
