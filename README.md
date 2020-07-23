@@ -1,4 +1,4 @@
-# Email Helper Back-End
+# Email Helper Back End
 
 -API point and database for email automater
 
