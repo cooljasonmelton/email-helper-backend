@@ -1,8 +1,19 @@
 # Email Helper Back End
 
--API point and database for email automater
+-RESTful API end-point and database for Email Helper
 
 <img src="https://github.com/cooljasonmelton/email-automater/blob/master/demo.gif"/>
 
 
-<a href="https://github.com/cooljasonmelton/email-helper"> front-end </a>
+## built with
+- Ruby on Rails
+- Postgres
+
+
+## <a href="https://github.com/cooljasonmelton/email-helper"> see front-end </a>
+
+## built by
+Jason Melton
+
+## contact
+jason.melton2@gmail.com
