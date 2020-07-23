@@ -9,11 +9,10 @@
 - Ruby on Rails
 - Postgres
 
-
-## <a href="https://github.com/cooljasonmelton/email-helper"> see front-end </a>
-
 ## built by
 Jason Melton
 
 ## contact
 jason.melton2@gmail.com
+
+## <a href="https://github.com/cooljasonmelton/email-helper"> see front-end </a>
